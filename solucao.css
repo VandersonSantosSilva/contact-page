@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'poppis';
+    src: url(./fontes/poppins/Poppins-Bold.otf) format('openType')
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: #f4f4f4;
+    font-family: 'poppis';
+}
+
+.conteiner{
+    width: 99vw;
+    height: 94.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    width: 1200px;
+    padding: 15px;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+p{
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 2em;
+    margin-top: 15px;
+    color: #555b6c;
+}
+
+.pi{
+    margin-left: 0px;
+    margin-bottom: 50px;
+
+}
+
+.lista{
+    padding: 10px;
+}
+
+.lista-especial{
+    padding: 0;
+    margin-bottom: 0px;
+    margin-left: 2em;
+}
+
+.moedas{
+    margin-bottom: 30px;
+
+}
+
+ul{
+    columns: 2;
+    column-gap: 130px;
+}
+
+li{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-left: 1em;
+    color: #2c81c7;
+}
+
+a{
+    text-decoration: none;
+    color: #2c81c7;
+}
+
+a:hover{
+    text-decoration: underline;
+
+}
+
+.hr{
+    display: none;
+
+}
+
+footer{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer{
+    margin: 0;
+    padding: 0;
+    color: white;    
+}
+
+
+@media screen and (max-width: 1130px){
+
+    .conteiner{
+        display: block;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .conteudo{
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    ul{
+        column-gap: 0px;
+        columns: 1;
+
+    }
+
+    .pi{
+        text-align: left;
+
+    }
+
+    .lista-especial{
+        margin-bottom: 20px;
+        margin-left: 2em;
+    }
+
+    .hr{
+        display: block;
+
+    }
+
+    footer{
+        position: absolute;
+        top: 1650px;
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        width: 100%;
+        
+    }
+    
+
+}
